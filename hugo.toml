@@ -1,7 +1,7 @@
 # ============================================
 # Hugo 基础配置
 # ============================================
-baseURL = '/'                          # 部署时改为你的域名，如 'https://example.com/'
+baseURL = 'https://peng-xiaojia.github.io/my-blog/'  # 自定义域名时修改此处
 locale = 'zh-cn'
 defaultContentLanguage = 'zh-cn'
 title = '我的博客'

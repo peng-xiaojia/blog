@@ -15,7 +15,9 @@
       "Bash(curl -s http://localhost:1313/posts/)",
       "Bash(curl -s http://localhost:1313/)",
       "Bash(gh auth *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m 'feat: 初始化 Hugo 博客 — PaperMod 主题 *)",
+      "Bash(chmod +x *)"
     ]
   }
 }
