@@ -17,7 +17,12 @@
       "Bash(gh auth *)",
       "Bash(git add *)",
       "Bash(git commit -m 'feat: 初始化 Hugo 博客 — PaperMod 主题 *)",
-      "Bash(chmod +x *)"
+      "Bash(chmod +x *)",
+      "Bash(git commit -m 'feat: 添加 CI/CD、一键脚本、项目手册 *)",
+      "Bash(git config *)",
+      "Bash(env)",
+      "Bash(ssh *)",
+      "Bash(curl -s --connect-timeout 5 https://peng-xiaojia.github.io/my-blog/)"
     ]
   }
 }
