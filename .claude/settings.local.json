@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(hugo version *)",
+      "Bash(winget install *)",
+      "Bash(git init *)",
+      "Bash(git submodule *)",
+      "WebFetch(domain:localhost)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:1313/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:1313/posts/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:1313/about/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:1313/search/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:1313/posts/hello-world/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:1313/2026/06/hello-world/)",
+      "Bash(curl -s http://localhost:1313/posts/)",
+      "Bash(curl -s http://localhost:1313/)",
+      "Bash(gh auth *)",
+      "Bash(git add *)"
+    ]
+  }
+}

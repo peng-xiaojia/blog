@@ -1,0 +1,111 @@
+# ============================================
+# Hugo 基础配置
+# ============================================
+baseURL = '/'                          # 部署时改为你的域名，如 'https://example.com/'
+locale = 'zh-cn'
+defaultContentLanguage = 'zh-cn'
+title = '我的博客'
+theme = 'PaperMod'
+
+# 启用 emoji 支持
+enableEmoji = true
+
+# ============================================
+# 分页
+# ============================================
+paginate = 10                          # 每页显示 10 篇文章
+summaryLength = 120                    # 摘要长度（字数）
+
+# ============================================
+# 代码高亮 (Chroma)
+# ============================================
+[markup]
+  [markup.highlight]
+    noClasses = false                  # 使用 CSS 类（主题会提供样式）
+    style = 'monokai'
+
+# ============================================
+# 文章永久链接
+# ============================================
+[permalinks]
+  posts = '/:year/:month/:slug/'       # 示例: /2026/06/hello-world/
+
+# ============================================
+# PaperMod 主题参数
+# ============================================
+[params]
+  # --- 首页模式 ---
+  # profileMode: 个人介绍页 + 文章列表
+  # homeInfoMode: 简单文字介绍 + 文章列表
+  # 不设置则只显示文章列表
+  [params.homeInfoParams]
+    title = '你好，欢迎来到我的博客 👋'
+    content = '这里记录我的学习、思考和生活的点滴。'
+
+  # --- 作者信息 ---
+  author = '你的名字'
+  description = '一个热爱技术和生活的博主'
+
+  # --- 日期格式 ---
+  dateFormat = '2006-01-02'
+
+  # --- 主题切换 ---
+  defaultTheme = 'auto'                # auto / light / dark
+  disableThemeToggle = false
+
+  # --- 功能开关 ---
+  showReadingTime = true               # 阅读时间
+  showWordCount = true                 # 字数统计
+  showPostNavLinks = true              # 上一篇/下一篇导航
+  showBreadcrumbs = true               # 面包屑导航
+  showCodeCopyButtons = true           # 代码块复制按钮
+  showToc = true                       # 目录
+  hideSummary = false                  # 列表页显示摘要
+  hideFooter = false
+
+  # --- 搜索 ---
+  [params.fuseOpts]                     # Fuse.js 搜索配置
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+
+  # --- 社交链接 (可选) ---
+  # socialIcons:
+  #   - name = 'github'
+  #     url = 'https://github.com/你的用户名'
+  #   - name = 'email'
+  #     url = 'mailto:your@email.com'
+  #   - name = 'twitter'
+  #     url = 'https://twitter.com/你的用户名'
+
+  # --- 评论系统 (可选，后续可开启) ---
+  # comments = true
+
+# ============================================
+# 主导航菜单
+# ============================================
+[[menu.main]]
+  name = '文章'
+  pageRef = '/posts'
+  weight = 10
+
+[[menu.main]]
+  name = '关于'
+  pageRef = '/about'
+  weight = 30
+
+[[menu.main]]
+  name = '搜索'
+  pageRef = '/search'
+  weight = 40
+
+# ============================================
+# 分类 & 标签
+# ============================================
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  series = 'series'
